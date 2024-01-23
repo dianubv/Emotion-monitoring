@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Recognition</title>
+    <link rel="stylesheet" href="emotion_recognition/er.css">
+    <script src="emotion_recognition/er.js"></script>
+</head>
+<body>
+    <main class="er-container">
+        <h1 id="erHead">Emotion recognition</h1>
+        <div class="content-wrapper">
+            <div class="text-sections">
+                <div class="record-section">
+                    <h2>Record your heart rate:</h2>
+                    <ul id="instruction">
+                        <li>Start the OpenSignal device</li>
+                        <li>Connect ECG electrodes like in the tutorial</li>
+                        <li>Place ECG sensor on your skin</li>
+                        <li>Press the button below</li>
+
+                    </ul>
+                    
+                    <button id="recordButton">Record ECG</button>
+                </div>
+                <div class="output-section">
+                    <span>Emotion detected: </span><span id="outputEmotion">OutputEmotion</span>
+                    <p id="advice"></p>
+                </div>
+            </div>
+        <div class="picture-section">
+            <video id="ecgVideo" width="100%" controls>
+                <source src="emotion_recognition/videoECG.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+    </main>
+    
+</body>
+</html>

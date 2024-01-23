@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
         loadContent('psy_advisor/psy_advisor.html', 'psy_advisor/psy_advisor.js');
         document.getElementById('homeButtonContainer').style.display = 'block';
     });
+    document.getElementById('erButton').addEventListener('click', () => {
+        loadContent('emotion_recognition/er.html', 'emotion_recognition/er.js');
+        document.getElementById('homeButtonContainer').style.display = 'block';
+    });
 
     // Add more event listeners for other buttons (like Emotion Recognition) if needed
 });
@@ -55,8 +59,7 @@ function loadContent(htmlUrl, jsUrl) {
 
 // Function to bind events for Psychological Advisor
 function bindPAEvents() {
-    console.log('Binding PA events'); // Debugging log
-
+    
     // Check if generateText is defined
     if (typeof generateText === 'function') {
         const generateButton = document.getElementById('generateButton');
@@ -65,10 +68,8 @@ function bindPAEvents() {
         } else {
             console.error('Generate button not found');
         }
-    } else {
-        console.error('generateText function not defined');
-        // Optional: Retry binding after a delay
-        setTimeout(bindPAEvents, 1000); // Retry after 1 second
+    }
+    else {
     }
 }
 

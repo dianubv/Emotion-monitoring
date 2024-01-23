@@ -1,0 +1,72 @@
+#erHead {
+    border-radius: 8px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+.er-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-sections {
+    max-width: calc(50% - 10px);
+    flex: 1; 
+    margin-right: 10px; 
+}
+
+#instruction{
+    margin-left: 20px;
+    text-align: left;
+}
+
+
+
+.record-section, .output-section {
+    flex-basis: 48%;
+    margin: 20px 0;
+    padding: 20px;
+    background: #e9eff7;
+    border-radius: 8px;
+}
+
+
+#recordButton:hover {
+    background: #007bff;
+}
+
+.picture-section {
+    flex: 1; 
+    max-width: calc(50% - 10px);
+    margin-left: 10px; 
+}
+
+@media (max-width: 768px) {
+    .text-sections, .picture-section {
+        /* On small screens, take full width */
+        max-width: 100%;
+        flex-basis: 100%;
+        margin: 10px 0; /* Add vertical spacing */
+    }
+}
+
+.picture-section video {
+    max-height: 500px; /* Example fixed height */
+    border-radius: 8px; /* To match other sections if needed */
+    /* Add any other styles you want for the video here */
+}
+
