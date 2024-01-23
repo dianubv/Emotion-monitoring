@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+#paHead {
+    border-radius: 8px;
+}
+
+.input-section, .output-section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #e9eff7;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.left-input, .right-input {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#inputText {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+
+#generateButton {
+    display: inline-block;
+    background: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generateButton:hover {
+    background: #3a70d2;
+}
+
+.output-section {
+    background: #28a7462b;
+    display: none;
+}

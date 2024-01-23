@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 25px;
+}
+
+.navigation{
+    text-align: center;
+}
+
+#homeButtonContainer {
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+.header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Content area */
+.content {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+button:hover {
+    background-color: #218838;
+}
